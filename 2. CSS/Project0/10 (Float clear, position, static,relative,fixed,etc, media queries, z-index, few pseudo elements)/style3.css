@@ -1,0 +1,43 @@
+body {
+  background: yellow;
+}
+.banner {
+  background: red;
+}
+h1 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: red;
+  }
+  .banner {
+    background: lightcoral;
+  }
+  h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background: green;
+  }
+  .banner {
+    background: lightseagreen;
+  }
+  h1 {
+    font-size: 100px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
+/* media queries is awesome. it lets you have multiple properties depending upon how the user makes any changes to the screen. */
+/* Responsive Design 
+Style Elements on different screen sizes.
+min-with: --- starting from
+max-width: --- up to 
+
+mobile first*/

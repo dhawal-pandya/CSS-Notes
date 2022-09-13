@@ -1,0 +1,31 @@
+img {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+}
+
+.banner {
+  margin: 20px;
+  width: 70vh;
+  height: 70vh;
+  border: 5px solid black;
+  position: relative;
+}
+
+.one {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* z index is by default is always 0. positive values are closer to user and begative values are furhter from the user. */
+.two {
+  top: 10%;
+  left: 10%;
+  /* z-index: -1; */
+}
+.three {
+  top: 30%;
+  left: 30%;
+  /* z-index: 5000; */
+}
+/* zindex doesn't work with position: static. */

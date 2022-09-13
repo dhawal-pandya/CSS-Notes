@@ -1,0 +1,55 @@
+/* Default Display Property. */
+/* block = always starts a new line and take up full width. */
+/* inline = does not start a new line and only take up as much as content space */
+.block {
+  background: blue;
+  color: fuchsia;
+}
+
+.inline {
+  background: red;
+  color: wheat;
+}
+/* some elements have default properties like this. it can be changed by declaring display*/
+/* 
+.inline {
+  display: block;
+} */
+/* uncomment this block to see the effect. */
+
+/* Horizontal Centering */
+/* there is always... */
+body {
+  text-align: center;
+}
+/* ...but also there is... */
+.block {
+  margin: 20px auto;
+}
+/* the margin auto pushes the margin all the way that it can. since the first value in margin is top-bottom and the second left-right, here only the second is left right, which perfectly centers the element. the margin can simply be left at auto too. */
+
+/* Browser does not repect the margins of Inline, so you have to change it to block everytime using display block.*/
+ul li {
+  text-align: left;
+  list-style-type: none;
+}
+/* notice the selector method.. */
+ul li a {
+  box-sizing: border-box;
+  margin: 0;
+  background: #222;
+  color: #f15025;
+  padding: 10px;
+}
+/* this problem is solved by uncomment the bottom code */
+/* ul li a {
+  display: block;
+} */
+/* The browser will not listen to inline elements.*/
+/* The other thing that you can do is use...
+ 
+ ul li a {
+     display:inline-block;
+ }
+ 
+ the inline-block property forces the browser to listen, but does not let the element become block.*/

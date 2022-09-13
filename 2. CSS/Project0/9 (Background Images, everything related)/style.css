@@ -1,0 +1,27 @@
+div {
+  height: 300px;
+  color: red;
+}
+
+.big-img {
+  background: url("./big-img.jpg");
+}
+/* the url of the background is simple to add, it can be done both with or without the "", also the size of the image matters, the image will not zoom around with the size of the windows display, so it something always to be kept in mind, and also by default, if you zoom past the image border, the image repeats. */
+.small-img {
+  background: url(./small-img.jpg);
+  background-repeat: no-repeat;
+  background-repeat: space;
+  background-repeat: round;
+}
+/* the declaration of the element background-repeat, can be set to no repeat, so as to not repeat the image,(very common) as well a very useful value of round. this value tries to fit the whole image in the given space, and then if one dimension of the image is too big it will repeat the image, but the repeated image will also be complete, meaning it will not be cropped */
+.folder-img {
+  background: url(./folder/folder.img.jpg);
+  background-size: cover;
+}
+/* background size: cover makes it better than the round value of background-repeat, where the image is shown fully without repetition. it stretches with the browser */
+/* background-size: contain also does the same but with the dimensions of the original image kept same while filling the imahe in the given space and on extension repeating it. always remember, repaeting is default. */
+.img {
+  background: url(./big-img.jpg);
+  background-position: center;
+}
+/* background position is to set the position of the background in the designated space on the browser. center, bottom, left, right, are all self explanatory. you can also set it exactly where you want it, using the px and % using the x and y axis. */

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  /* min-height: 100vh; */
+  color: blue;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background-position: center;
+}
+
+.big-img {
+  background: url("./big-img.jpg");
+}
+.small-img {
+  background: url(./small-img.jpg);
+  background-repeat: no-repeat;
+  background-repeat: round;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.folder-img {
+  background: url(./big-img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Background atttachment: fixed is a game changer, definately makes the website far superior looking to others. */
+
+/* Gradients */
+#gradient {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin: 5px;
+}
+
+.one {
+  background: linear-gradient(red, green);
+}
+.two {
+  background: linear-gradient(to top, red, green);
+}
+/* default is to bottom, to get to top, we need to type to top. */
+.three {
+  background: linear-gradient(290deg, yellow, blue, pink);
+}
+/* the first value is the degree by how much degree the colour changes.  */
+.four {
+  background: linear-gradient(to top right, aqua, purple);
+}
+/* it can also be written this way */
+.five {
+  background: radial-gradient(purple, red);
+}
+.six {
+  background: radial-gradient(blue, firebrick);
+}

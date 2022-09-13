@@ -1,0 +1,37 @@
+h1 {
+  color: red;
+  font-style: italic;
+  font-size: 4rem;
+}
+/* Root- The whole thing combined with selector and declaration is called root. */
+/* Selector- Here the h1 is called the selector. I can also be made a class with proper id and all. */
+/* Declaration- The things written between the {} is called the declaration. The whole thing is called declaration block. */
+/* Property- The color, font-size, etc is the property and the number corresponding to it are its values connected by a syntax of colon between them. They always need to end with a semi colon; */
+p {
+  font-style: italic;
+  text-align: center;
+}
+h3 {
+  font-weight: bold;
+}
+body {
+  text-align: center;
+}
+/* The whole body can also be styled like this. */
+#www {
+  color: brown;
+}
+/* the ids can be declared with a #, it will affect the id across all pages that you have. */
+/* This is called ID Selector. */
+.gre {
+  color: green;
+}
+.red {
+  color: red;
+}
+/* classes can be declared with a ., it will also affect across pages. */
+/* This is called a Class Selector. */
+#q {
+  color: purple;
+}
+/* Id takes preference over class, so a combination of both can be done. */

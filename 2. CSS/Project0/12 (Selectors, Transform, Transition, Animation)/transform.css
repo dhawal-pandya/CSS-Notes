@@ -1,0 +1,37 @@
+/* transform : translate(), scale(), rotate(), skew() */
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background: red;
+  transform: translate(2rem, 20rem);
+}
+/* translate moves the element. */
+.two {
+  background: blue;
+  transform: scale(120%);
+}
+/* the scale obviously scales the element size. */
+.three {
+  background: green;
+  transform: rotateZ(45deg);
+}
+/* the rotate mostly uses z axis to rotate. z axis is the default, because the axis comes towards the user. the x and y are in the screen, so the image will only seem squished. */
+.four {
+  background: purple;
+  transform: skew(45deg);
+}
+/* skew skews. default in x axis */
+.five {
+  background: black;
+}
+.six {
+  background: pink;
+}
+.seven {
+  background: orange;
+}

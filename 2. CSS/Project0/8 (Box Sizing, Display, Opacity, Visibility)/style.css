@@ -1,0 +1,52 @@
+/* Box-Sizing */
+.box1,
+.box2,
+.box3 {
+  width: 200px;
+  height: 200px;
+}
+.box1 {
+  background: red;
+  color: whitesmoke;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.box2 {
+  background: green;
+  color: whitesmoke;
+}
+
+.box3 {
+  background: blue;
+  color: whitesmoke;
+  padding: 20px;
+}
+
+/* So, if you inspect elements of the lower blue box, you will see that the content is appropriately 200px by 200px, but it takes the space of 240px by 240px on the browser, by box-sizing:border-box, with the padding of 20px, it will still take up only 200px by 200px on browser. */
+
+
+/* Display, Opacity and Visibility */
+#piki {
+    font-size:80px;
+    background:blue;
+    margin: 10px;
+    color:white;
+}
+.none {
+    display: none;
+}
+.opacity1{
+    opacity:1;
+}
+.opacity05{
+    opacity:0.5;
+}
+.opacity0{
+    opacity:0;
+}
+.visibility {
+    visibility:hidden;
+}
+
+/* You can check everything by using Google DevTools */

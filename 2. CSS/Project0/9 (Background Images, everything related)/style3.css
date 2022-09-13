@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  color: aqua;
+}
+.banner {
+  background: url(./folder/folder.img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.637)),
+    url("./folder/folder.img.jpg") center/cover no-repeat fixed;
+}
+/* there exists such shortcuts, depends on how you want to work on it. */
+/* External resouces for linear-gradient */
+/* Look up 'CSS Linear Gradient Generator' and then 'Ultimate...' */

@@ -1,0 +1,54 @@
+/* CSS BOX MODEL */
+/* content is encased in padding, which is encased in border, which is surrounded by margin. */
+/* Google CSS Box Model */
+
+/* Padding */
+h1 {
+  background: blue;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+}
+/* all sides can be done indiviually */
+h1 {
+  padding: 40px;
+}
+/* if to be given only one value, then only padding element can be taken. */
+h1 {
+  padding: 30px 40px 50px 12px;
+}
+/* all four values can be added too, the numbers go clockwise, top right bottom and left. */
+
+/* Margin */
+/* Absolutely same like the padding, but margin comes between the edge of window and edge of border. */
+/* remember, default margin is 8px, so for that, it is usually adviced to add "margin:0 auto" to the * selector in the very beginning.
+
+/* Border */
+h2 {
+  font-size: 60px;
+  border-width: 10px;
+  border-style: groove;
+  border-color: crimson;
+}
+h2 {
+  border: 14px double purple;
+}
+/* the order to specify all things in a single declaration is the width, then the style then the color. */
+/* Border also works exactly the same as the padding or margin, with added elements of having either individual borders, or different colors or widths for the borders along with styles. */
+
+/* Border Radius */
+p {
+  background: rgb(51, 223, 51);
+  border: 10px solid rgb(13, 148, 65);
+  border-radius: 10%;
+}
+/* the border radius curves the vertices of the border. you can uses pxs or percentages. */
+
+/* Negative margin */
+h4 {
+  margin-top: -25px;
+}
+/* self explanatory, it puts multiple things on top of one another. */
+
+/* P.S.: in all the above cases the browser will read the last rule for the output, because of the way css works. */

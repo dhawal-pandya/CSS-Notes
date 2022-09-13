@@ -1,0 +1,2 @@
+caniuse.com shows which code or part of code is supported by which browser.
+autoprefixer.github.io will help add vendor prefixes.

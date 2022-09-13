@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  float: left;
+  height: 500px;
+  width: 33.33%;
+}
+
+.one {
+  background: red;
+}
+.two {
+  background: blue;
+}
+.three {
+  background: green;
+}
+.four {
+  background: purple;
+}
+/* without the code below this comment the hello world would come next to the last div. to get it to start from a new line you use clear. */
+h1 {
+  clear: both;
+}
+/* it is the best to use float along with clear property. */

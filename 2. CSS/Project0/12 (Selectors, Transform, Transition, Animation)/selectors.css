@@ -1,0 +1,38 @@
+p::first-line {
+  font-weight: bold;
+}
+p::first-letter {
+  font-size: 90px;
+}
+
+/* self explanatory, firstline and first letter pseudo element selectors. */
+
+.header:hover {
+  color: red;
+}
+/* the hover is changed using this different syntax.  */
+
+/* think m? these guys can also be used.
+
+:link
+:visited
+:hover
+:active
+
+active is the colour of the link exactly when you click it, shows up only for a second.
+*/
+
+:root {
+  font-size: 3rem;
+}
+h1 {
+  font-size: 3rem;
+}
+.absolute {
+  font-size: 24px;
+}
+.responsive {
+  font-size: 1.5rem;
+}
+/* 1rem === 16px === 100% by default */
+/* rem is more responsive to the user screen setting. */

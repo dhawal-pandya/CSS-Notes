@@ -1,0 +1,13 @@
+
+.double-border {
+  display: block;
+  clear: both;
+  background: red;
+  padding: 4px;
+  border: 5px solid yellow;
+  outline: 5px solid blue;
+  outline-offset: 4px;
+  margin: 40px;
+  height: 50px;
+  width: 50px;
+}

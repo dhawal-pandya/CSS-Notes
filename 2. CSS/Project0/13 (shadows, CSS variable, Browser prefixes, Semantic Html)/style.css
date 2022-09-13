@@ -1,0 +1,29 @@
+/* 
+CSS VAriables aka Custom Properties
+they hold a value and you can reuse them
+
+--varName:value
+property:var(--varName)
+scope
+:root{} === global
+element === local
+can be used for any property*/
+
+:root {
+  --piki: red;
+  --maintransition: all 4s linear;
+}
+.head {
+  color: var(--piki);
+}
+h3 {
+  color: var(--piki);
+}
+/* the property along with the value is stored in the variable, so  */
+.ting {
+  transition: var(--maintransition);
+}
+.ting2:hover {
+  color: aqua;
+}
+/* the best would be to just declare the variable in the root itself so they can be accessed everwhere, but you can always declare a variable inside a selector and use it only for that selector and its descendants. */

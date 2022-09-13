@@ -1,0 +1,58 @@
+/* CSS calc function */
+.banner {
+  background: rgb(247, 0, 0);
+  min-height: calc(100vh - 100px);
+}
+/* this whole exercise was to learn the CSS calc function, you can combine it to include other aspects and the parent elements declarations using appropriate units. */
+img {
+  display: block;
+  width: 95%;
+  margin: auto;
+}
+/* remember these settings, they are used for centering an image. */
+
+/* "The Cool Space" */
+body {
+  max-width: 800px;
+  width: 80vw;
+  margin: auto;
+  background: bisque;
+}
+/* this is how you make that cool space on both sides of the webpage */
+
+/* Font Family */
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* the reason we have so many fonts, it is called a font-stack btw, is that it will check with the browser which of these fonts it can render in that order. */
+
+/* Google Fonts */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap'); */
+/* we just google the font we want in the website of google fonts, https://fonts.google.com/ and then select the desired font we need, and then either we link it in the <head> of the html or import it into the style.css. The relevent code is to be merely copied. In the above comment when the comment tag is removed, we see how the code of the font family is imported. */
+.other {
+  font-family: "Roboto", cursive;
+  text-indent: 50px;
+}
+
+/* Font Weight, Style */
+/* Font weight is used to make things bolder or lighter. */
+/* Font style is used to make things italic aor oblique. */
+/* there is also a normal option in both weight and style, that is used when there is an inherited property other than normal, but you want a specific selector to be normal. */
+
+/* Text-align, Text-Indent */
+/* Text align, aligns the text either right, left, center, justify, etc. */
+/* Text indent defines after how much space will the text of the line begin. check it out above in "other". always keep the alignment in mind though.*/
+
+/* Line height, letter spacing, word-spacing, text transform, text decoration */
+/* line height changes the height of individual lines of text, 
+the letter spacing changes the space between individual letters, and 
+word spacing changes space between the words. */
+/* text transform has options like Capitalize, whicn capitalises the first word of the text, or Uppercase, or lowercase, usually used with a span tag coupled with ids. */
+
+#piki {
+  font-size: 40px;
+  text-decoration: none;
+}
+/* the text decoration can be used to put or remove the underlines, overlines, line-through, dottedlines, as well change the colour of the text. */

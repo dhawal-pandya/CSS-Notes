@@ -1,0 +1,18 @@
+/* 
+text-shadow
+box-shadow 
+*/
+
+h1 {
+  text-shadow: 9px 1px 1px red;
+}
+/* the first value is of xaxis, then yaxis then shadow blurness, then color of shadow */
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background: blue;
+  box-shadow: 3px 5px 7px green;
+}
+/* same syntax for the box shadow as for the text shadow. */
+/* also Google 'CSS shadow generator' codes. */

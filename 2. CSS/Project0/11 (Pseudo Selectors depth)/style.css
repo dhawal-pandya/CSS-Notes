@@ -1,0 +1,33 @@
+
+body {
+    background: red;
+    color: white;
+}
+
+.one li {
+    color: blue;
+    background: white;
+}
+
+.two li:nth-child(2n) {
+    color:blue;
+    background: white;
+}
+/* the nth child also allows for maths like 2n+1 or 3n or something like that. very common , very powerful */
+.three li+li+li+li {
+    color:blue;
+    background: white;
+}
+/* the + symbol used here is used to denote sibling, just like the > symbol is used to denote the child of the element . so here the + is saying the sibling of sibling of sibling of sibling, is to be selected ignoring the earlier chil;dren. but that aaplies to all the rest of the children too, so the others are also styled */
+
+.four li:first-child ,.four li:last-child {
+    color:blue;
+    background: white;
+}
+/* and there are many other such pseudoselectors.
+basically selectors upon selectors. */
+
+#text:focus + #button {
+    display: none;
+}
+/* needs more work to learn */

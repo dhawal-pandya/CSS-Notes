@@ -1,0 +1,43 @@
+/* Color */
+#piki {
+  color: firebrick;
+}
+/* you can choose out of 140 named colors */
+h1 {
+  color: rgb(0, 255, 45);
+  z-index: 0;
+}
+/* you can choose out of 0 to 255 any values for any of thr r g b , to make the color */
+p {
+  color: rgba(20, 30, 40, 0.6);
+}
+/* in rgba the last a stands for the opacity of the designated color. the opacity can only have values between 0-1. */
+h2 {
+  color: #f2334e;
+}
+/* there are also the hex color values, which can be accessed directly by typing #followed by the hex value of the desired color. */
+/* on hovering over the written name, or number of the color, you can cycle over the rgb, rgba, hsl and hex values */
+/* you can get great color palettes by using coolors.com to get multiple combinations. */
+
+/* Units */
+
+p {
+  font-size: 60px;
+  width: 200px;
+  height: 50px;
+}
+/* px means pixels. a pixel is the width of a dot on a screen. px is an absolute value */
+/* % would mean the percentage of the screen the element would go to. % is a relative value. so what is it in relative to? it is primarily to the screen, but it is actually in relative to its parent tag */
+/* em means relative depends on parent. 1em = 16px by default */
+/* rem means root em value, meaning relative to the root of the document usually the html  */
+
+html {
+  text-align: center;
+}
+
+/* vh is view height - percent of the screen
+   vw is view width - percent of the screen.
+   these are the best in business, because they change with the orientation of the screen. */
+
+/* default browser styles and google devTools */
+/* all Browsers have a default setting for multiple things that come precoded, for example the font-weight of h1 tag is bold. we never type it, but that is done by the browser itself before executing the file. this can be accessed by going to browser/more tools/developer tools or ctrl+shift+i to open. it looks weird but on closer examination, you will see that it only shows the code you have typed, and all untyped code will be seen under user agent stylesheet. these settings  come by default */

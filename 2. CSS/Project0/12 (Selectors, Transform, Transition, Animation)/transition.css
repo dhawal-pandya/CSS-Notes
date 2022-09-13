@@ -1,0 +1,108 @@
+/* 
+transition === change over time. */
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+div:hover {
+  background: #f15025;
+}
+.one {
+  background: lime;
+  transition-property: background, border-radius;
+  transition-duration: 4s;
+}
+.one:hover {
+  border-radius: 70%;
+  transition-delay: 2s;
+}
+/* the transition transits the element into the desired property value. */
+.two {
+  background: blue;
+}
+.three {
+  background: green;
+}
+.four {
+  background: purple;
+}
+.five {
+  background: black;
+}
+.six {
+  background: pink;
+}
+
+.seven {
+  background: orange;
+  transition: all 3s 1s;
+}
+.seven:hover {
+  background: purple;
+}
+/* 
+How the transition takes place
+transition-timing-function:
+the shorthand for it is...
+transition: all 3s(transition-duration) 'here' 5s(transition-delay)
+here =
+ease(default) = slow start, fasr,slow end
+linear = same speed throughout
+ease-in = slowstart
+ease-out = slowend
+ease-in-out = default*/
+/* Google "transition-timing-functions" for more data on them. */
+
+.three {
+  background: green;
+}
+.four {
+  background: purple;
+}
+.five {
+  background: black;
+}
+.six {
+  background: pink;
+}
+/* transition vs animation */
+p {
+  width: 200px;
+  height: 100px;
+  margin: 0;
+  color: white;
+  font-size: 30px;
+}
+.transition {
+  background: red;
+  transition: all 2s linear;
+}
+.transition:hover {
+  background: yellow;
+  transform: translate(20px);
+}
+.animation {
+  background: blue;
+  /* animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; */
+  animation: move 3s 4;
+  animation-fill-mode: forwards;
+}
+@keyframes move {
+  25% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    color: #f15025;
+  }
+}
+/* 
+this is how the animation is done.
+the naming of the animation is done after writing @keyframes, this name has to be mentioned in the animation. the keyframes allows the transition to happen with many more options.*/
+/* for the shorthand to write the animation we write the name, then duration, then the number of iterations it will do. */
+/* the animation-fill-mode lets us decide if the properties given to the element by the animation will stay or not. backwards reverts it back to the div properties, while forwards keeps the animation properties. */

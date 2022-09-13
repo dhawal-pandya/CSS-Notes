@@ -1,0 +1,49 @@
+* {
+  margin: 0 auto;
+  padding: 10px;
+}
+.banner {
+  border: 5px solid red;
+}
+img {
+  height: 150px;
+  width: 150px;
+  float: left;
+}
+
+p {
+  clear: left;
+}
+/* float literally floats the image on the screen, just that the text in the same div will wrap around the image.
+clear will take up the whole row and the text portion will start in a new line. */
+
+.one {
+  float: right;
+}
+
+.two {
+  float: left;
+}
+
+p {
+  clear: both;
+}
+
+/* the both option of clear takes multiple elements into consideration. */
+
+.bar {
+  border: 25px double blue;
+  clear: both;
+  overflow: hidden;
+}
+
+.piki {
+  height: 300px;
+  width: 4000px;
+}
+.pika {
+  float: right;
+}
+/* the overflow defines what to do when element overflows the boundary of the div, or the screen */
+/* all these floats, clears, and overflows also work for text also. */
+/* for makng columns we use float */

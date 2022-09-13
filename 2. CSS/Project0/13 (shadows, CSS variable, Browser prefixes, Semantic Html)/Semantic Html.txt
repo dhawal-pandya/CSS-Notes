@@ -1,0 +1,3 @@
+Just Google "semantic html" or "semantic tags".
+It basically removes the need to keep adding the <div class="header"></div> and simply write the whole thing as <header></header>.
+it not only makes your work easier, but also makes it slightly easier for the browser to know what you are doing with the tags. it doesn't know what your div means, but header and footer, or aside is known.

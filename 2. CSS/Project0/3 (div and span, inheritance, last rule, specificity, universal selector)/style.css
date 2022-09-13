@@ -1,0 +1,54 @@
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+body {
+  width: 50%;
+}
+/* div and span */
+div {
+  color: darkred;
+}
+span {
+  text-transform: uppercase;
+  background-color: pink;
+}
+/* div takes the style to new lines, span takes the style to smaller things.
+Both of them are used for grouping mainly. */
+/* if you replace a span with div, the changes will be made but since that point the output will start from a new line. */
+
+/* Inheritance */
+
+body {
+  text-align: center;
+  line-height: 1.5em;
+}
+/* observe that h2 and p are inside the body tag, so any style given to body will apply to them, unless explicitly mentioned to not happen. in that case, the specified style will occur.
+just like the priority order of inline, internal and external css, the highest priority will be of the same tage, then parent tag, and then its parent tag, if any.  */
+
+/* Last Rule and Specificity */
+h5 {
+  color: red;
+}
+h5 {
+  color: blue;
+}
+/* here i have given different declarations to same selectors, the output will always be of the second declaration, or the last declaration. in the priority order, the last rule that is applied is executed, that is becasue the comupter reads the code line by line. */
+.piki {
+  color: purple;
+}
+h5 {
+  color: chartreuse;
+}
+/* from this example we see that even though the h5 selector is last, the code executed is of piki class, that is because, it is more specific, while the h5 selector is more general. so in priority order, the last rule is over ridden by specificity. it also echoes in the inline, internal and exteranl styles. */
+/* check out CSS Specificity */
+
+/* Universal Selector */
+* {
+  font-style: italic;
+}
+/* even though it is universal, it has the least specificity, and hence it will be usually buried under other code. it can be selected by typing a "*". */
