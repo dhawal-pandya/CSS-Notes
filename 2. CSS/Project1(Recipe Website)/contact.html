@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- this meta tag is important, this attribute of content, followed by width=device-width,initial-scale=1.0 is important to introduce the website to open on a mobile device. -->
+  <title>Contact</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <!-- nav -->
+  <nav class="navbar">
+    <div class="nav-center">
+      <!-- header -->
+      <div class="nav-header">
+        <a href="index.html" class="nav-logo">
+          <img src="./assets/logo.svg" alt="simply recipes">
+        </a>
+        <button type="button" class="btn nav-btn">
+          <i class="fas fa-align-justify"></i>
+        </button>
+      </div>
+      <!-- links -->
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="tags.html" class="nav-link">Tags</a>
+        <a href="recipes.html" class="nav-link">Recipes</a>
+        <div class="nav-link contact-link">
+          <a href="contact.html" class="btn">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of nav -->
+  <!-- main -->
+  <main class="page">
+    <section class="contact-container">
+      <article class="contact-info">
+        <h3>Want to get in touch?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illo ullam dolore necessitatibus animi. Quia, excepturi omnis quae perspiciatis in quo dolorum nobis eius assumenda!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam delectus esse in.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi recusandae quis quod alias! Commodi esse, praesentium illo enim consequuntur blanditiis!</p>
+      </article>
+      <article>
+        <form class="form contact-form">
+          <!-- single form row -->
+          <div class="form-row">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" name="name" id="name" class="form-input">
+            <!-- end of single form row -->
+          <!-- single form row -->
+          <div class="form-row">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="text" name="email" id="email" class="form-input">
+            <!-- end of single form row -->
+            <div class="form-row">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="message" id="message" class="form-textarea"></textarea>
+            </div>
+            <button type="submit" class="btn btn-block">Submit</button>
+          </div>
+        </form>
+      </article>
+    </section>
+    <section class="featured-recipes">
+      <section class="featured-recipes">
+        <h5 class="featured-title">Look at this Awesomesauce!!</h5>
+        <!-- recipes list -->
+        <div class="recipes-list">
+          <!-- single-recipes -->
+          <a href="single-recipe.html">
+            <img src="./assets/recipes/recipe-1.jpeg" alt="food" class="img recipe-img">
+            <h5>CArne Asada</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single-recipes -->
+          <!-- single-recipes -->
+          <a href="single-recipe.html">
+            <img src="./assets/recipes/recipe-2.jpeg" alt="food" class="img recipe-img">
+            <h5>Greek Ribs</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single-recipes -->
+          <!-- single-recipes -->
+          <a href="single-recipe.html">
+            <img src="./assets/recipes/recipe-3.jpeg" alt="food" class="img recipe-img">
+            <h5>Veg Soup</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single-recipes -->
+        </div>
+        <!-- end of recipes list -->
+      </section>
+    </secction>
+  </main>
+  <!-- end of main -->
+  <footer class="page-footer">
+    <p>
+      &copy; <span id="date">2022</span>
+      <!-- check out the 2021 error -->
+      <span class="footer-logo">SimplyRecipes</span>
+      Built by <a href="#">Dhawal Pandya</a>
+    </p>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
